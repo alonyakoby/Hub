@@ -1,0 +1,17 @@
+db:
+  image: "klaemo/couchdb:latest"
+  ports:
+    - "5984:5984"
+  environment:
+    - COUCHDB_USERNAME=alon
+    - COUCHDB_PASSWORD=2204
+
+app:
+  image: ibmcom/swift-ubuntu
+  ports:
+    - "8080:8080"
+  volumes:
+    - .:/root/HUBAPI
+  command: bash -c "cd /root/HUBAPI swift build --clean && swift build --configuration release && .build/release/HUBServer"
+  links:
+    - db:localhost

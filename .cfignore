@@ -1,0 +1,7 @@
+_Store
+.build/*
+Packages/*
+*.xcodeproj/*
+*.xcworkspace/*
+couchdb.stdout
+couchdb.stderr
