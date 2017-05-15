@@ -37,10 +37,10 @@ public class Server: HUBAPI {
     //    static let defaultPassword = "1bed5f813a3f31c50996e3ae68ff5d7998ed45996abcd62fb5eedb9b5d930b74"
     //
     // DEVELOPMENT
-    static let defaultDBHost = "127.0.0.1"
+    static let defaultDBHost = "localhost"
     static let defaultDBPort = UInt16(5984)
     static let defaultDBName = "hubapi"
-    static let defaultUsername = "alon"
+    static let defaultUsername = "alony"
     static let defaultPassword = "Passw00rd"
     
     let dbName = "hubapi"
@@ -80,8 +80,8 @@ public class Server: HUBAPI {
             Log.info("Using CF Service Credentials")
             
         } else {
-            host = "127.0.0.1"
-            username = "alon"
+            host = "localhost"
+            username = "alony"
             password = "Passw00rd"
             port = UInt16(5984)
             Log.info("Using Service Development Credentials")
