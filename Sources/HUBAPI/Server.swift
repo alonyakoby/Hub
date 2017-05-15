@@ -41,7 +41,7 @@ public class Server: HUBAPI {
     static let defaultDBPort = UInt16(5984)
     static let defaultDBName = "hubapi"
     static let defaultUsername = "alon"
-    static let defaultPassword = "2204"
+    static let defaultPassword = "Passw00rd"
     
     let dbName = "hubapi"
     let designName = "hubapidesign"
