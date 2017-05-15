@@ -40,7 +40,7 @@ public class Server: HUBAPI {
     static let defaultDBHost = "localhost"
     static let defaultDBPort = UInt16(5984)
     static let defaultDBName = "hubapi"
-    static let defaultUsername = "alon"
+    static let defaultUsername = "root"
     static let defaultPassword = "Passw00rd"
     
     let dbName = "hubapi"
@@ -81,7 +81,7 @@ public class Server: HUBAPI {
             
         } else {
             host = "localhost"
-            username = "alon"
+            username = "root"
             password = "Passw00rd"
             port = UInt16(5984)
             Log.info("Using Service Development Credentials")
