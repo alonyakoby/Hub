@@ -3,8 +3,8 @@ db:
   ports:
     - "5984:5984"
   environment:
-    - COUCHDB_USERNAME=alon
-    - COUCHDB_PASSWORD=2204
+    - COUCHDB_USERNAME=alony
+    - COUCHDB_PASSWORD=Passw00rd
 
 app:
   image: ibmcom/swift-ubuntu
