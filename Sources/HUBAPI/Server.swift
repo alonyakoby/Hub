@@ -37,11 +37,11 @@ public class Server: HUBAPI {
     //    static let defaultPassword = "1bed5f813a3f31c50996e3ae68ff5d7998ed45996abcd62fb5eedb9b5d930b74"
     //
     // DEVELOPMENT
-    static let defaultDBHost = "localhost"
+    static let defaultDBHost = "127.0.0.1"
     static let defaultDBPort = UInt16(5984)
     static let defaultDBName = "hubapi"
-    static let defaultUsername = "alony"
-    static let defaultPassword = "Passw00rd"
+    static let defaultUsername = "pbkdf2"
+    static let defaultPassword = "2cd5af2b8bfc79bb19ed9a6bb81693f7e034b092"
     
     let dbName = "hubapi"
     let designName = "hubapidesign"
@@ -81,8 +81,8 @@ public class Server: HUBAPI {
             
         } else {
             host = "localhost"
-            username = "alony"
-            password = "Passw00rd"
+            username = "pbkdf2"
+            password = "2cd5af2b8bfc79bb19ed9a6bb81693f7e034b092"
             port = UInt16(5984)
             Log.info("Using Service Development Credentials")
         }
